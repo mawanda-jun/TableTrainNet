@@ -24,6 +24,7 @@ Before we go on make sure you have everything installed to be able to use the pr
 * Python 3
 * Tensorflow
 * Its [object-detection API](https://github.com/tensorflow/models/tree/master/research/object_detection#tensorflow-object-detection-api)
+(remember to install COCO API. If you are on Windows see at the bottom of the readme)
 * Pillow
 * opencv-python
 * pandas
@@ -117,4 +118,14 @@ numbers that tells the program which scores must be merged together.
 The procedure is better described in `inference_with_net.py`.
 
 For every execution a `.log` file will be produced.
+
+
+## Common issues while installing Tensorflow models
+### TypeError: can't pickle dict_values objects
+[This](https://github.com/tensorflow/models/issues/4780#issuecomment-405441448)
+comment will probably solve your problem.
+
+### Windows build and python3 support for COCO API dataset
+[This](https://github.com/philferriere/cocoapi)
+clone will provide a working source for COCO API in Windows and Python3
 
