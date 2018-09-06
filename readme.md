@@ -23,14 +23,14 @@ The datasets was taken from:
 Before we go on make sure you have everything installed to be able to use the project:
 * Python 3
 * Tensorflow
-* It's [object-detection API](https://github.com/tensorflow/models/tree/master/research/object_detection#tensorflow-object-detection-api)
+* Its [object-detection API](https://github.com/tensorflow/models/tree/master/research/object_detection#tensorflow-object-detection-api)
 * Pillow
 * opencv-python
 * pandas
 * pyprind (useful for process bars)
 
 # Project pipeline
-The project is made up of different parts that acts as a pipeline.
+The project is made up of different parts that acts together as a pipeline.
 
 ### Take confidence with costants
 I have prepared two "costants" files: `dataset_costants.py` and `inference_constants.py`.
@@ -39,7 +39,12 @@ inference with the frozen graph. If you just want to run the project you should 
  
 ### Transform the images from RGB to single-channel 8-bit grayscale jpeg images
 Since colors are not useful for table detection, we can convert all the images in `.jpeg` 8-bit single channel images.
-Use `dataset/img_to_jpeg.py` [CHECKING THIS (fig1)](https://www.researchgate.net/publication/320243569_Table_Detection_Using_Deep_Learning)
+[This](https://www.researchgate.net/publication/320243569_Table_Detection_Using_Deep_Learning))
+transformation is still under testing.
+Use `dataset/img_to_jpeg.py` and set `dataset_costants.py`:
+* `DPI_EXTRACTION`: output quality of the images;
+* `PATH_TO_IMAGES`: path/to/datase/images;
+* `IMAGES_EXTENSION`: extension of the extracted images. The only one tested is `.jpeg`.
 
 ### Prepare the dataset for Tensorflow
 The dataset was take from 
@@ -47,11 +52,22 @@ The dataset was take from
 . It comes with a `xml` notation file with formulas, images and tables per image.
 Tensorflow instead can build its own TFRecord from csv informations, so we need to convert
 the `xml` files into a `csv` one.
-Use `dataset/generate_database_csv.py` to do this conversion. More details are in the code.
+Use `dataset/generate_database_csv.py` to do this conversion and set `dataset_costants.py`:
+* `TRAIN_CSV_NAME`: name for `.csv` train output file; 
+* `TEST_CSV_NAME`: name for `.csv` test output file;
+* `TRAIN_CSV_TO_PATH`: folder path for `TRAIN_CSV_NAME`;
+* `TEST_CSV_TO_PATH`: folder path for `TEST_CSV_NAME`;
+* `ANNOTATIONS_EXTENSION`: extension of annotations. In our case is `.xml`;
+* `TRAINING_PERCENTAGE`: percentage of images for training
+* `TEST_PERCENTAGE`: percentage of images for testing
+* `TABLE_DICT`: dictionary for data labels. For this project there is no reason to change it;
+* `MIN_WIDTH_BOX`, `MIN_HEIGHT_BOX`: minimum dimension to consider a box valid;
+Some networks don't digest well little boxes, so I put this check.
 
 ### Generate TF records file
 `csv` files and images are ready: now we need to create our TF record file to feed Tensorflow.
-Use `generate_tf_records.py` to create two `.record` files that we will need later.
+Use `generate_tf_records.py` to create the train and test`.record` files that we will need later. No need to configure
+`dataset_costants.py`
 
 ### Train the network
 Inside `trained_models` there are some folders. In each one there are two files, a `.config` and a `.txt` one.
@@ -84,13 +100,21 @@ python export_inference_graph.py \
 
 ### Test your graph!
 Now that you have your graph you can try it out:
-* create a folder in which you save your `bmp` test images
-* modify the `inference_costants` accordingly
-* run `inference_with_net.py`
+Run `inference_with_net.py` and set `inference_costants.py`:
+* `PATHS_TO_TEST_IMAGE`: path list to all the test images;
+* `BMP_IMAGE_TEST_TO_PATH`: path to which save test output files;
+* `PATHS_TO_LABELS`: path to `.pbtxt` label file;
+* `MAX_NUM_BOXES`: max number of boxes to be considered;
+* `MIN_SCORE`: minimum score of boxes to be considered;
 
-Accordingly to `inference_costants`, this will show the best `MAX_NUM_BOXES` with score higher than `MIN_SCORE`
-for all the `TEST_SCORES` and `PATH_TO_CKPTS` graphs.
+Then it will be generated a result image for every combination of:
+* `PATHS_TO_CKPTS`: list path to all frozen graph you want to test;
+
 In addition it will print a "merged" version of the boxes, in which
-all the best vertically overlapping boxes are merged together to gain accuracy.
+all the best vertically overlapping boxes are merged together to gain accuracy. `TEST_SCORES` is a list of
+numbers that tells the program which scores must be merged together.
+
 The procedure is better described in `inference_with_net.py`.
+
+For every execution a `.log` file will be produced.
 
