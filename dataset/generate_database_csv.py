@@ -12,7 +12,7 @@ import xml.etree.ElementTree as ET
 from PIL import Image
 import pyprind
 from random import shuffle
-from costants import \
+from dataset_costants import \
 	TRAINING_PERCENTAGE, \
 	TABLE_DICT, \
 	ANNOTATIONS_EXTENSION, \
@@ -140,14 +140,14 @@ def xml_to_csv(img_folder, img_list, xml_folder, xml_list):
 				value = (img_file, width, height, 'no_table', 0, 0, 0, 0)
 			else:
 				# setting box as percentage of the image. This can be done in generate_tf_records also.
-				xmin = int(points['xmin']) / width
-				ymin = int(points['ymin']) / height
-				xmax = int(points['xmax']) / width
-				ymax = int(points['ymax']) / height
-				value = (img_file, width, height, TABLE_DICT['name'], xmin, ymin, xmax, ymax)
+				xmin = int(points['xmin'])
+				ymin = int(points['ymin'])
+				xmax = int(points['xmax'])
+				ymax = int(points['ymax'])
+				value = (img_file, TABLE_DICT['name'], xmin, ymin, xmax, ymax)
 			xml.append(value)
 		if not is_table:
-			value = (img_file, width, height, 'no_table', 0, 0, 0, 0)
+			value = (img_file, 'no_table', 0, 0, 0, 0)
 			xml.append(value)
 		logger.debug('Added new value: {}'.format(value))
 	logger.info('CSV successfully generated!')

@@ -62,7 +62,8 @@ from inference_costants import \
 	TEST_SCORES, \
 	NUM_CLASSES, \
 	PATH_TO_LABELS, \
-	BMP_IMAGE_TEST_TO_PATH
+	BMP_IMAGE_TEST_TO_PATH, \
+	MAX_NUM_BOXES
 
 TEST_IMAGE_PATHS = PATHS_TO_TEST_IMAGE
 PATH_TO_CKPTs = PATHS_TO_CKPTS
@@ -348,7 +349,7 @@ if __name__ == '__main__':
 						best_boxes, best_scores = keep_best_boxes(
 							boxes=boxes,
 							scores=scores,
-							max_num_boxes=10,
+							max_num_boxes=MAX_NUM_BOXES,
 							min_score=SCORE
 						)
 						coords = []

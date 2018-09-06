@@ -1,4 +1,4 @@
-from costants import TABLE_DICT
+from dataset_costants import TABLE_DICT
 PATH_TO_LABELS = 'C:\\Users\\giova\\Documents\\PyCharmProjects\\TableTrainNet\\data\\object-detection.pbtxt'
 BMP_IMAGE_TEST_TO_PATH = 'C:\\Users\\giova\\Documents\\PyCharmProjects\\TableTrainNet\\test'
 
@@ -27,3 +27,5 @@ PATHS_TO_CKPTS = [
 ]
 
 TEST_SCORES = [0.2, 0.4, 0.6, 0.8]
+
+MAX_NUM_BOXES = 10

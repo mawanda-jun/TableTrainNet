@@ -1,12 +1,12 @@
 """
-It generates the train and tf records that are set by costants.py file.
+It generates the train and tf records that are set by dataset_costants.py file.
 """
 
 from __future__ import division
 from __future__ import print_function
 from __future__ import absolute_import
 
-from costants import TABLE_DICT
+from dataset_costants import TABLE_DICT
 
 import os
 import io
@@ -16,7 +16,7 @@ import tensorflow as tf
 from PIL import Image
 from object_detection.utils import dataset_util
 from collections import namedtuple
-from costants import \
+from dataset_costants import \
 	TF_TRAIN_RECORD_TO_PATH, \
 	TF_TRAIN_RECORD_NAME, \
 	TF_TEST_RECORD_TO_PATH, \
@@ -85,10 +85,10 @@ def create_tf_example(group, path):
 	# it now append the coordinates of the boxes inside csv file per image
 	logger.debug('Appending csv {fn} infos to page tf_example...'.format(fn=filename))
 	for index, row in group.object.iterrows():
-		xmins.append(row['xmin'])
-		xmaxs.append(row['xmax'])
-		ymins.append(row['ymin'])
-		ymaxs.append(row['ymax'])
+		xmins.append(row['xmin']) / width
+		xmaxs.append(row['xmax']) / width
+		ymins.append(row['ymin']) / height
+		ymaxs.append(row['ymax']) / height
 		classes_text.append(row['class'].encode('utf8'))
 		classes.append(class_text_to_int(row['class']))
 
