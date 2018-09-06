@@ -19,10 +19,6 @@ The datasets was taken from:
     [ground truth](http://www.iapr-tc11.org/mediawiki/index.php?title=Table_Ground_Truth_for_the_UW3_and_UNLV_datasets);
     * [Marmot Dataset](http://www.icst.pku.edu.cn/cpdp/data/marmot_data.htm)
 
-
-When a neural network is trained it is possible to test it clean or with some algorithm. More info are in the description
-below and in the code itself.
-
 # Required libraries
 Before we go on make sure you have everything installed to be able to use the project:
 * Python 3
