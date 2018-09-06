@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document filename="POD_0470.xml">
+	<formulaRegion>
+		<Coords points="415,369 890,369 415,395 890,395"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="392,487 890,487 392,531 890,531"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="228,821 890,821 228,901 890,901"/>
+	</formulaRegion>
+	<figureRegion>
+		<Coords points="918,1280 1022,1280 918,1343 1022,1343"/>
+	</figureRegion>
+	<figureRegion>
+		<Coords points="204,112 440,112 204,261 440,261"/>
+	</figureRegion>
+	<figureRegion>
+		<Coords points="579,112 816,112 579,262 816,262"/>
+	</figureRegion>
+</document>

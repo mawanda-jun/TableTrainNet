@@ -1,0 +1,6 @@
+python model_main.py --pipeline_config_path=C:/Users/giova/Documents/PycharmProjects/TableTrainNet/model_ssd_mobilenet_v1_fpn_shared_box/ssd_mobilenet_v1_fpn_shared_box_predictor_640x640_coco14_sync.config --model_dir="C:\Users\giova\Documents\PycharmProjects\TableTrainNet\model_ssd_mobilenet_v1_fpn_shared_box" --num_train_steps=5000 --num_eval_steps=200 --eval_dir=C:/Users/giova/Documents/PycharmProjects/TableTrainNet/eval_ssd_mobilenet_v1_fpn_coco --alsologtostderr
+
+
+LINKS:
+https://stackoverflow.com/questions/51684594/nameerror-name-xrange-is-not-defined-when-running-tensorflow-object-detection
+

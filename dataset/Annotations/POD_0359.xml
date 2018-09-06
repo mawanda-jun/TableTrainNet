@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document filename="POD_0359.xml">
+	<formulaRegion>
+		<Coords points="105,103 325,103 105,124 325,124"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="100,138 292,138 100,157 292,157"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="154,211 510,211 154,232 510,232"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="222,237 592,237 222,258 592,258"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="222,262 337,262 222,284 337,284"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="169,395 577,395 169,417 577,417"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="247,422 494,422 247,443 494,443"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="172,534 463,534 172,555 463,555"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="270,560 574,560 270,581 574,581"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="270,585 470,585 270,607 470,607"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="272,815 475,815 272,864 475,864"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="101,917 464,917 101,967 464,967"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="214,977 645,977 214,1028 645,1028"/>
+	</formulaRegion>
+</document>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document filename="POD_0901.xml">
+	<figureRegion>
+		<Coords points="117,124 370,124 117,325 370,325"/>
+	</figureRegion>
+	<figureRegion>
+		<Coords points="388,123 642,123 388,325 642,325"/>
+	</figureRegion>
+	<figureRegion>
+		<Coords points="660,125 909,125 660,323 909,323"/>
+	</figureRegion>
+	<figureRegion>
+		<Coords points="115,356 349,356 115,538 349,538"/>
+	</figureRegion>
+	<figureRegion>
+		<Coords points="392,349 650,349 392,552 650,552"/>
+	</figureRegion>
+	<figureRegion>
+		<Coords points="658,350 914,350 658,551 914,551"/>
+	</figureRegion>
+	<figureRegion>
+		<Coords points="542,675 730,675 542,850 730,850"/>
+	</figureRegion>
+	<figureRegion>
+		<Coords points="734,677 927,677 734,846 927,846"/>
+	</figureRegion>
+</document>

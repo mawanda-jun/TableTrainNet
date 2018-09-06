@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document filename="POD_1131.xml">
+	<formulaRegion>
+		<Coords points="71,190 332,190 71,221 332,221"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="173,229 494,229 173,281 494,281"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="173,289 482,289 173,352 482,352"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="147,399 342,399 147,435 342,435"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="135,526 390,526 135,561 390,561"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="243,567 433,567 243,599 433,599"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="173,995 499,995 173,1016 499,1016"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="136,1060 431,1060 136,1096 431,1096"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="145,1239 441,1239 145,1292 441,1292"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="161,1298 395,1298 161,1322 395,1322"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="525,150 613,150 525,172 613,172"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="588,177 955,177 588,230 955,230"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="609,280 746,280 609,299 746,299"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="611,302 886,302 611,356 886,356"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="591,932 955,932 591,954 955,954"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="540,1029 798,1029 540,1048 798,1048"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="676,1052 931,1052 676,1080 931,1080"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="627,363 955,363 627,413 955,413"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="601,627 955,627 601,680 955,680"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="664,769 814,769 664,821 814,821"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="676,1088 938,1088 676,1138 938,1138"/>
+	</formulaRegion>
+	<formulaRegion>
+		<Coords points="125,1179 311,1179 125,1229 311,1229"/>
+	</formulaRegion>
+</document>

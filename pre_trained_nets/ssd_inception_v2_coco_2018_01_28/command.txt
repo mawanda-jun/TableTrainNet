@@ -1,0 +1,5 @@
+python model_main.py --pipeline_config_path=C:/Users/giova/Documents/PycharmProjects/TableTrainNet/model_ssd_inception_v2_coco/ssd_inception_v2_coco.config --model_dir="C:\Users\giova\Documents\PycharmProjects\TableTrainNet\model_ssd_inception_v2_coco" --num_train_steps=1000 --num_eval_steps=500 --eval_dir=C:/Users/giova/Documents/PycharmProjects/TableTrainNet/eval_ssd_inception_v2_coco_2018_01_28 --alsologtostderr
+
+
+LINKS:
+

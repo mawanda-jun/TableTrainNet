@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document filename="POD_1090.xml">
+	<figureRegion>
+		<Coords points="79,92 662,92 79,261 662,261"/>
+	</figureRegion>
+	<tableRegion>
+		<Coords points="221,782 524,782 221,896 524,896"/>
+	</tableRegion>
+	<tableRegion>
+		<Coords points="230,928 511,928 230,1042 511,1042"/>
+	</tableRegion>
+</document>

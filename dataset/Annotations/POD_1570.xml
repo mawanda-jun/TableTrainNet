@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document filename="POD_1570.xml">
+	<figureRegion>
+		<Coords points="305,211 448,211 305,353 448,353"/>
+	</figureRegion>
+	<figureRegion>
+		<Coords points="472,211 610,211 472,353 610,353"/>
+	</figureRegion>
+	<figureRegion>
+		<Coords points="638,211 779,211 638,353 779,353"/>
+	</figureRegion>
+	<figureRegion>
+		<Coords points="304,372 442,372 304,513 442,513"/>
+	</figureRegion>
+	<figureRegion>
+		<Coords points="471,372 607,372 471,513 607,513"/>
+	</figureRegion>
+	<figureRegion>
+		<Coords points="638,372 773,372 638,513 773,513"/>
+	</figureRegion>
+</document>

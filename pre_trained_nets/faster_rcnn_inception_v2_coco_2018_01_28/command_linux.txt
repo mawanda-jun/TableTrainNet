@@ -1,0 +1,1 @@
+python model_main.py --pipeline_config_path=/mnt/c/Users/giova/Documents/PycharmProjects/IntelligentOCR/model/faster_rcnn_inception_v2_coco_linux.config --model_dir="/mnt/c/Users/giova/Documents/PycharmProjects/IntelligentOCR/model" --num_train_steps=1000 --num_eval_steps=500 --eval_dir=/mnt/c/Users/giova/Documents/PycharmProjects/IntelligentOCR/eval --alsologtostderr
