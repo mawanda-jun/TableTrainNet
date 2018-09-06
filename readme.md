@@ -42,7 +42,7 @@ inference with the frozen graph. If you just want to run the project you should 
 Since colors are not useful for table detection, we can convert all the images in `.jpeg` 8-bit single channel images.
 [This](https://www.researchgate.net/publication/320243569_Table_Detection_Using_Deep_Learning))
 transformation is still under testing.
-Use `dataset/img_to_jpeg.py` and set `dataset_costants.py`:
+Use `python dataset/img_to_jpeg.py` after setting `dataset_costants.py`:
 * `DPI_EXTRACTION`: output quality of the images;
 * `PATH_TO_IMAGES`: path/to/datase/images;
 * `IMAGES_EXTENSION`: extension of the extracted images. The only one tested is `.jpeg`.
@@ -53,7 +53,7 @@ The dataset was take from
 . It comes with a `xml` notation file with formulas, images and tables per image.
 Tensorflow instead can build its own TFRecord from csv informations, so we need to convert
 the `xml` files into a `csv` one.
-Use `dataset/generate_database_csv.py` to do this conversion and set `dataset_costants.py`:
+Use `python dataset/generate_database_csv.py` to do this conversion after setting `dataset_costants.py`:
 * `TRAIN_CSV_NAME`: name for `.csv` train output file; 
 * `TEST_CSV_NAME`: name for `.csv` test output file;
 * `TRAIN_CSV_TO_PATH`: folder path for `TRAIN_CSV_NAME`;
@@ -67,7 +67,7 @@ Some networks don't digest well little boxes, so I put this check.
 
 ### Generate TF records file
 `csv` files and images are ready: now we need to create our TF record file to feed Tensorflow.
-Use `generate_tf_records.py` to create the train and test`.record` files that we will need later. No need to configure
+Use `python generate_tf_records.py` to create the train and test`.record` files that we will need later. No need to configure
 `dataset_costants.py`
 
 ### Train the network
