@@ -7,6 +7,7 @@ test
 !test/**/*.png
 !trained_models/**/frozen
 *.record
+__pycache__
 
 # Created by https://www.gitignore.io/api/python,pycharm
 
@@ -45,7 +46,6 @@ fabric.properties
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
-__pycache__/
 *.py[cod]
 *$py.class
 
