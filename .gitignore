@@ -4,8 +4,7 @@
 dataset/Images/**/*.jpeg
 trained_models
 test
-!test/**/*.png
-!trained_models/**/frozen
+!trained_models/frozen
 *.record
 __pycache__
 
