@@ -8,7 +8,7 @@ The project uses the pre-trained neural network
 [offered](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
 by Tensorflow. In addition, a 
 [config](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs)
-file was used, according to the pre-trained model choosen, to train with 
+file was used, according to the choosen pre-trained model, to train with 
 [object detections tensorflow API](https://github.com/tensorflow/models/tree/master/research/object_detection#tensorflow-object-detection-api)
 
 The datasets was taken from:
