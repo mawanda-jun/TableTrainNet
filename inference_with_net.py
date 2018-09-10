@@ -285,7 +285,7 @@ if __name__ == '__main__':
         TEST_BMP_PATHS.append(file_path)
 
     for PATH_TO_CKPT in PATH_TO_CKPTs:
-        graph_name = os.path.splitext(PATH_TO_CKPT)[0].split("/")[-4]  # take the name of the graph for renaming reasons
+        graph_name = os.path.splitext(PATH_TO_CKPT)[0].split("/")[-3]  # take the name of the graph for renaming reasons
         graph_name = graph_name.replace("model__rcnn_inception_", "")  # the name was too long :)
         # since the frozen script makes the frozen graph always at the same place
         # PATH_TO_CKPT = PATH_TO_CKPT + '/frozen/frozen_inference_graph.pb'
