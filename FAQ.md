@@ -35,7 +35,3 @@ the two - let me increase accuracy;
 (`y_min` and `y_max` and not `x_min` and `x_max`). This let me reduce inference error.
 
 Then **no**, it is not a black box at all.
-
-I have made those tests with my other project
-[TableTrainNet](https://github.com/mawanda-jun/TableTrainNet)
-and applied the results to this one.
