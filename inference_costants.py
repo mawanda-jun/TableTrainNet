@@ -24,7 +24,7 @@ PATHS_TO_CKPTS = [
     # 'C:/Users/giova/Documents/PycharmProjects/TableTrainNet/trained_models/model__rcnn_inception_momentum_1/frozen/frozen_inference_graph.pb',
     # 'C:/Users/giova/Documents/PycharmProjects/TableTrainNet/trained_models/model__rcnn_inception_momentum_10k_jpg/frozen/frozen_inference_graph.pb',
     # 'C:/Users/giova/Documents/PycharmProjects/TableTrainNet/trained_models/model__rcnn_inception_momentum_optimizer_1batch/frozen/frozen_inference_graph.pb'
-    'C:/Users/giova/Documents/PycharmProjects/TableTrainNet/trained_models/model__rcnn_inception_adam_4/model/frozen/frozen_inference_graph.pb'
+    'C:/Users/giova/Documents/PycharmProjects/TableTrainNet/trained_models/model__rcnn_inception_adam_4/frozen/frozen_inference_graph.pb'
 ]
 
 TEST_SCORES = [0.2, 0.4, 0.6, 0.8]
