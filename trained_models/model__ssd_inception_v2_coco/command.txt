@@ -1,0 +1,1 @@
+python model_main.py --pipeline_config_path=C:\Users\giova\Documents\PycharmProjects\TableTrainNet\trained_models\model__ssd_inception_v2_coco/ssd_inception_v2_coco.config --model_dir="C:\Users\giova\Documents\PycharmProjects\TableTrainNet\trained_models\model__ssd_inception_v2_coco\model" --num_train_steps=10000 --alsologtostderr

@@ -2,9 +2,13 @@
 .idea
 *.png
 dataset/Images/**/*.jpeg
-trained_models
+
+trained_models/
+!trained_models/*/frozen
+!trained_models/*/*.config
+!trained_models/*/*.txt
+
 test
-!trained_models/frozen
 *.record
 __pycache__
 
