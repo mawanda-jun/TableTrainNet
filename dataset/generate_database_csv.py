@@ -12,6 +12,7 @@ import xml.etree.ElementTree as ET
 from PIL import Image
 import pyprind
 from random import shuffle
+from personal_errors import InputError, OutputError
 from dataset_costants import \
     TRAINING_PERCENTAGE, \
     TABLE_DICT, \
@@ -136,7 +137,7 @@ def xml_to_csv(img_folder, img_list, xml_folder, xml_list):
             coordinates = coords.get('points')
             points = sanitize_coord(coordinates, width, height)  # returning as dict: xmin, ymin, xmax, ymax
             if points is None:
-                value = (img_file, width, height, 'no_table', 0, 0, 0, 0)
+                value = (img_file, 'no_table', 0, 0, 0, 0)
             else:
                 # setting box as percentage of the image. This can be done in generate_tf_records also.
                 xmin = int(points['xmin'])
@@ -151,7 +152,7 @@ def xml_to_csv(img_folder, img_list, xml_folder, xml_list):
         logger.debug('Added new value: {}'.format(value))
     logger.info('CSV successfully generated!')
     # column_name columns must be remembered while generating tf records
-    column_name = ['filename', 'width', 'height', 'class', 'xmin', 'ymin', 'xmax', 'ymax']
+    column_name = ['filename', 'class', 'xmin', 'ymin', 'xmax', 'ymax']
     xml_df = pd.DataFrame(xml, columns=column_name)
     return xml_df
 

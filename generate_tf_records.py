@@ -85,10 +85,10 @@ def create_tf_example(group, path):
     # it now append the coordinates of the boxes inside csv file per image
     logger.debug('Appending csv {fn} infos to page tf_example...'.format(fn=filename))
     for index, row in group.object.iterrows():
-        xmins.append(row['xmin']) / width
-        xmaxs.append(row['xmax']) / width
-        ymins.append(row['ymin']) / height
-        ymaxs.append(row['ymax']) / height
+        xmins.append(row['xmin'] / width)
+        xmaxs.append(row['xmax'] / width)
+        ymins.append(row['ymin'] / height)
+        ymaxs.append(row['ymax'] / height)
         classes_text.append(row['class'].encode('utf8'))
         classes.append(class_text_to_int(row['class']))
 
