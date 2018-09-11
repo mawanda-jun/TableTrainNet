@@ -8,7 +8,8 @@ trained_models/
 !trained_models/*/*.config
 !trained_models/*/*.txt
 
-test
+test/
+!test/*.png
 *.record
 __pycache__
 
